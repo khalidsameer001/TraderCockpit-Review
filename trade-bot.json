@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "logical-essence-446222-e4",
+  "private_key_id": "f7ad971ad351a1dfaf30848aa78eda83f1aff402",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDLNNOcpXpFxhRA\nbbsa8p8tkgat4CpR5LUpmyXX+nDNbjK4RmPGXWhhx8lwWAgALPyF8UiKsRHk1MmF\n1atR4A7cL2sfjUGJtANLboGaFQQM+foz/n2K+RivGCmfnxTVlXKOO0ZokC9SSUCW\nhSQE+eQPMTb3VJ6M7QYHXe3y5X62RnHQJW/7R1hyWLdinxQpJx/wKF6ZH+gDIBAl\nDsDFWp+Hqb69y9SklVWrkzUUPEL8/q9S2+03NOceZcNhcKE62LfM8Yfq9Z7QS8V0\n+oJ0CiC++nHmipvYnC71zLvAUHllKGgYt63Qiipx+btp3pfU6/95UiNePp+PjKvQ\nr+z5fBNbAgMBAAECggEAFuJdnGwET5xFhpX09s1xAKxLxUQT8AIOJt/ajK6fCnuJ\nCbifnuTBDxX1SQoY6JAoZhssnLXhOoB+K2zLLN7LPZ+3dCevxEa6AkIxJT2Npbp3\nI2jbEY4I6hsSAPBk48K/UmY5gSgPtDgcpnba/hZ4SP+1XXgxnNRKlATPecW/ld44\nrtgBXh3l1OVWaAkMRJg8J5eID7Kx8JQA+WeI1JHiB5FCSdKihzub41YrKRYeWWmP\n01EnIkTLZPSAWXknpux3LzQBMHfV8GSYyH/CPw7N6e+o8QpiRJv0iooEKzYhqPHt\nx1ZADpvRn2OhDy1Su3TtNbsRj5urc8PgjH3+jMRDPQKBgQDkPNBuF/y+tnpg7ahG\ntuPwJjHRaKEVWpaMnG4ou+clzQOe5SO1pUIDtAis+ez3uj5kyWMPkB/PKshOskjs\n56mg8imMnFkqOTwpi9Dgiat5IbUqwytdKb2uTsvpkJQ+FEVSmM+9R1aU/02eVGNF\nePCANemIRqWy/k/5cMeM1kwRfwKBgQDj7I4lLTckulGxX5B8VAQi39fvkXxj3J7B\n1TslhHmTqJopqNyxYHnndyqSrFP/BRUf9tILlGOd88rHovrroQhXXV4N6sRCxec2\nCOGq+ZPqg+mf1zUo+EqqZauOPvyYlX4stnLgxqtdJTWyiQZdGi103pEXc+OIFZHx\nrl2un3B0JQKBgAiOgx3thks8GiByKIHmL2t8cxevvYJIcCZ7YuHiEYtoQT9+xbT0\nqiHraPvbLtgmwloS9sTJmXex2eqhYnyHPuPK0GX2Ip2joa7JEB6q6qPS8LDWulR2\n0Sasy5ZJFlWxetva4Mbu2r8hRy6taT9chl+4JbY3N9UbFbJ7WO/dxOJPAoGAfS0Y\n8DAB/gjZ/vlGKBIYZ3LabDdRwqKTCk9qeXNlNgQ+Dq0v77bVnJrk5cMBKqkG7hQn\nTbbEcyZGcxf+iNRa+WhM1IXgHfAEyLdeAQGrC/xAncma55Jdp3HJI4lSPxazQik9\ntFdIHBLoh9IbjZxn5KyrsN6z0rROABbMWrA0GYUCgYArZ9JTErvle81RQ9lqcfxK\nZ/WsPca0fgWmBYGdGGApOeHgDRSUfRKTKT9fNZp+Fbf30x6pjppCZ5yFQmdrEhE/\njnjH1mUmQFVXyUup0edf5yC04SRdS8iZRaSWfM4FNaGlb7+lT8U9UzhQoQ9HlwoY\nW9F0tZcNsQ4/JPhEYQva0Q==\n-----END PRIVATE KEY-----\n",
+  "client_email": "trade-bot@logical-essence-446222-e4.iam.gserviceaccount.com",
+  "client_id": "103684374606876545746",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/trade-bot%40logical-essence-446222-e4.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
