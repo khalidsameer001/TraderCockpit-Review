@@ -37,7 +37,13 @@ scope = [
     "https://www.googleapis.com/auth/drive"
 ]
 
-creds = ServiceAccountCredentials.from_json_keyfile_name("trade-bot.json", scope)
+from google.oauth2.service_account import Credentials
+
+creds = Credentials.from_service_account_info(
+    st.secrets["gcp_service_account"],
+    scopes=scope
+)
+
 client = gspread.authorize(creds)
 sheet = client.open_by_key(UNIFIED_SHEET_ID).sheet1
 
