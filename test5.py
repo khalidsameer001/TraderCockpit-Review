@@ -69,7 +69,18 @@ if "tf" not in st.session_state:
 title_col, mode_col = st.columns([3, 2])
 
 with title_col:
-    st.title("Trade Review App")
+st.markdown(
+    """
+    <div style="
+        font-size:28px;
+        font-weight:700;
+        margin-bottom:0px;
+    ">
+        Trade Review
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 with mode_col:
     mode = st.radio(
@@ -378,7 +389,10 @@ if entry and symbol and not main_data.empty:
     )
 
     with chart_col:
-        st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
+        st.plotly_chart(fig, use_container_width=True, config={
+    "displayModeBar": True,
+    "scrollZoom": True
+})
 
 # ==================== JOURNAL ====================
 
