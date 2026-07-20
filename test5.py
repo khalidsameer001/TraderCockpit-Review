@@ -66,21 +66,23 @@ if "tf" not in st.session_state:
     st.session_state.tf = "1m"
 
 # ==================== HEADER ====================
-title_col, mode_col = st.columns([3, 2])
+title_col, mode_col = st.columns([3, 2], vertical_alignment="center")
 
 with title_col:
     st.markdown(
-    """
-    <div style="
-        font-size:28px;
-        font-weight:700;
-        margin-bottom:0px;
-    ">
-        Trade Review
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+        """
+        <div style="
+            font-size:28px;
+            font-weight:700;
+            line-height:1.2;
+            margin-top:10px;
+            margin-bottom:10px;
+        ">
+            Trade Review
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
 with mode_col:
     mode = st.radio(
@@ -371,30 +373,62 @@ if entry and symbol and not main_data.empty:
     fig = add_sessions(fig, main_data)
 
     # ==================== LAYOUT ====================
-    fig.update_layout(
-        template="plotly_dark",
-        height=600,
-        margin=dict(l=10, r=10, t=10, b=10),
+fig.update_layout(
+    template="plotly_dark",
+    height=650,
 
-        xaxis=dict(
-            rangeslider=dict(visible=True)
+    dragmode="pan",
+
+    margin=dict(
+        l=10,
+        r=10,
+        t=10,
+        b=10
+    ),
+
+    xaxis=dict(
+        rangeslider=dict(
+            visible=False
         ),
+        fixedrange=False
+    ),
 
-        yaxis=dict(domain=[0.25, 1]),
-        yaxis2=dict(domain=[0, 0.22], showgrid=False),
+    yaxis=dict(
+        domain=[0.25, 1],
+        fixedrange=False
+    ),
 
-        showlegend=False,
-        paper_bgcolor="#0E1117",
-        plot_bgcolor="#0E1117"
+    yaxis2=dict(
+        domain=[0, 0.22],
+        showgrid=False,
+        fixedrange=False
+    ),
+
+    showlegend=False,
+
+    paper_bgcolor="#0E1117",
+    plot_bgcolor="#0E1117"
+)
+
+
+with chart_col:
+    st.plotly_chart(
+        fig,
+        use_container_width=True,
+        config={
+            "displayModeBar": True,
+            "scrollZoom": True,
+            "responsive": True,
+            "doubleClick": "reset",
+            "modeBarButtonsToRemove": [
+                "lasso2d",
+                "select2d"
+            ]
+        }
     )
-
-    with chart_col:
-        st.plotly_chart(fig, use_container_width=True, config={
-    "displayModeBar": True,
-    "scrollZoom": True
 })
 
-# ==================== JOURNAL ====================
+
 
 # ==================== JOURNAL ====================
 
