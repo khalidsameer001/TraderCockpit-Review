@@ -426,7 +426,7 @@ with chart_col:
             ]
         }
     )
-})
+
 
 
 
