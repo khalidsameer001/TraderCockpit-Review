@@ -69,7 +69,7 @@ if "tf" not in st.session_state:
 title_col, mode_col = st.columns([3, 2])
 
 with title_col:
-st.markdown(
+    st.markdown(
     """
     <div style="
         font-size:28px;
